@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        /* toàn trang */
+        
+        #wrapper {
+            width: 960px;
+            margin: 100px 150px 100px 80px;
+            text-align: left;
+        }
+        /* <!-- h1 có background màu xanh tối cho chuột vào đổi nâu  */
+        
+        .box {
+            background: palegreen;
+        }
+        
+        .box:hover {
+            background: brown;
+        }
+        /* h2 bên dưới có cùng màu cam - ở giữa màu xanh  */
+        
+        h2:not(.active) {
+            color: coral;
+        }
+        
+        h2.active {
+            color: darkgreen;
+        }
+        /* Đoạn văn đầu có 1 tiêu đề bình thường màu nâu, 
+        chuột vào =>màu xanh click ra trang mới--> */
+        
+        p a.lorem {
+            color: brown;
+        }
+        
+        p a#lorem:hover {
+            color: green;
+        }
+        /* check list click vào thì đổi màu */
+        
+        input:checked+label {
+            color: red;
+        }
+    </style>
+    <div id="wrapper">
+        <h1 class="box">Bài tập Selector Css-Unitop</h1>
+        <h2>Lorem Ipsum là gì?</h2>
+        <p>
+            <a id="lorem" href="https://www.lipsum.com/" target="blank"> Lorem Ipsum</a> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+            took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h2 class="active">Tại sao lại sử dụng lorem isum</h2>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+            content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+            Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+        <h2>Khoá học</h2>
+        <form action="">
+            <input type="checkbox" name="class" value="html" id="html">
+            <label for="html">HTML CSS 21 ngày</label> <br>
+            <input type="checkbox" name="class" value="bootrap">
+            <label for="bootrap">Boot traps AZ </label> <br>
+            <input type="checkbox" name="class" value="PHP">
+            <label for="PHP">PHP master </label> <br>
+        </form>
+    </div>
+</body>
+
+</html>
