@@ -1,0 +1,91 @@
+<!-- Layout web 2 cột - float Css 960px green padding:15px; -->
+<!-- content 600 padding:15px;-->
+<!-- sidebar 360 -->
+<!-- unitop.vn 10px -->
+<!-- background green -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-exp5</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+        
+        .box-1 {
+            width: 600px;
+            min-height: 500px;
+        }
+        
+        .box-2 {
+            width: 360px;
+            min-height: 500px;
+        }
+        
+        .bg-green {
+            background: green;
+        }
+        
+        .bg-white {
+            background: white;
+        }
+        
+        .bg-grey {
+            background: #e1e1e1;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-white {
+            color: white;
+        }
+        
+        .p-15 {
+            padding: 15px;
+        }
+        
+        .p-10 {
+            padding: 10px;
+        }
+        
+        .float-left {
+            float: left;
+        }
+        
+        .display-block {
+            display: block;
+        }
+        
+        .clear-both {
+            clear: both;
+        }
+    </style>
+    <div id="wrapper">
+        <header class="bg-green text-center text-white p-15">
+            <p>Layout web 2 cột - float Css</p>
+        </header>
+        <div class="clear-both"></div>
+        <div class="box-1 bg-white float-left">
+            <p class="p-15">Content</p>
+        </div>
+        <div class="box-2 bg-grey float-left">
+            <p class="p-15">Sidebar</p>
+        </div>
+        <div class="clear-both"></div>
+        <footer class="bg-green text-center text-white p-10">
+            <p> unitop.vn</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
