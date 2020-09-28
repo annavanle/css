@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-ex6</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+        
+        #wp-content {
+            display: flex;
+        }
+        
+        #content {
+            flex: 2 2 600px;
+            min-height: 500px;
+            background: #f3f3f3;
+        }
+        
+        #sidebar {
+            flex: 1 1 360px;
+            min-height: 500px;
+            background: #e1e1e1;
+        }
+        
+        #footer {
+            padding: 10px;
+        }
+        
+        .p-15 {
+            padding: 15px;
+        }
+        
+        .bg-blue {
+            background: blue;
+        }
+        
+        .text-white {
+            color: white;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .box-sizing {
+            box-sizing: border-box;
+        }
+    </style>
+    <div id="wrapper">
+        <div id="header" class="text-center bg-blue text-white p-15">Layout web 2 cột - float Css </div>
+        <div id="wp-content">
+            <div id="content" class="p-15 box-sizing">Content</div>
+            <div id="sidebar" class="p-15 box-sizing">Sidebar </div>
+        </div>
+        <div id="footer" class="text-center bg-blue text-white">Unitop.vn</div>
+
+    </div>
+
+
+</body>
+
+</html>
